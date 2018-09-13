@@ -1,0 +1,22 @@
+.marquee {
+    font-size: 8vh;
+}
+
+.article-count {
+    margin-bottom: 2vh;
+}
+
+button {
+    width: 6vw;
+    border-radius: 8px;
+    margin-bottom: 1vh;
+    background-color: #4CAF50;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: white;
+    color: #4CAF50;
+}

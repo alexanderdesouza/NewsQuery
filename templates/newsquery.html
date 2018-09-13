@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+    <div class="marquee">
+        NewsQuery
+    </div>
+        <div class="article-count">
+            {{ article_added_or_not }} <br/>
+            Database consists of {{ articles|length }} articles.
+        </div>
+</div>
+
+<div>
+    <form action="{{ url_for('add_article') }}", method="POST">
+        <input name="article_to_add" type="text" size="50" placeholder="Copy/paste text here to update database."> <br/>
+        <button type="submit">Add</button>
+    </form>
+    <form action="{{ url_for('query_articles') }}", method="POST">
+        <input name="query_statement" type="text" size="50" placeholder="Query database with a sentence..."> <br/>
+        <button type="submit">Query</button>
+    </form>
+</div>
+
+<!-- <div>
+    <div>
+        {{ positive_result }}
+    </div>
+    <div>
+        {{ negative_result }}
+    </div>
+</div> -->
+
+{% endblock %}
