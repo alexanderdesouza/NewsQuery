@@ -2,8 +2,25 @@
     font-size: 8vh;
 }
 
-.article-count {
+.article_count {
     margin-bottom: 2vh;
+}
+
+.results {
+    margin: 2vh 0 2vh 0;
+    text-align: justify;
+}
+
+.positive_result {
+    margin-bottom: 2vh;
+    text-align: center;
+    color: #4CAF50;
+}
+
+.negative_result {
+    margin-bottom: 2vh;
+    text-align: center;
+    color: #f44336;
 }
 
 button {

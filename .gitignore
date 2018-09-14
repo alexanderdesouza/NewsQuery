@@ -1,6 +1,10 @@
 # Files to ignore
 .DS_Store
+data/glove.*
+data/labelled_movie_reviews.tsv
+exploration/transfer_learning_experiment.ipynb
 
 # Dirs to ignore
+__pycache__
 .ipynb_checkpoints/
 py3/

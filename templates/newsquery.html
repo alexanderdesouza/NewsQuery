@@ -6,9 +6,9 @@
     <div class="marquee">
         NewsQuery
     </div>
-        <div class="article-count">
-            {{ article_added_or_not }} <br/>
-            Database consists of {{ articles|length }} articles.
+        <div class="article_count">
+            {{ article_added }} <br/>
+            Database consists of {{ num_articles }} articles.
         </div>
 </div>
 
@@ -23,13 +23,17 @@
     </form>
 </div>
 
-<!-- <div>
-    <div>
-        {{ positive_result }}
+{% if result %}
+<div class="results">
+    Most positively associated item (score {{ result.positive.score }}):
+    <div class="positive_result">
+        {{ result.positive.item }}
     </div>
-    <div>
-        {{ negative_result }}
+    Most negatively associated item (score {{ result.negative.score }}):
+    <div class="negative_result">
+        {{ result.negative.item }}
     </div>
-</div> -->
+</div>
+{% endif %}
 
 {% endblock %}
