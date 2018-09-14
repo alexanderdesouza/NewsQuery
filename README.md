@@ -29,3 +29,12 @@ python main.py
 The site will be hosted locally at http://127.0.0.1:5000/.
 
 _Please note that functionality has only been verified using Chrome (latest as of 13 Sep 2018)._
+
+## Exploration
+The `exploration` folder contains two iPyNb that explore different models for semantically tagging documents,
+identifying and comparing similar documents, and the possibility of updating the models iteratively (incomplete).
+
+* `data_and_model_exploration.ipynb` attempts to solve this problem with a traditional, albeit simple here, TF-IDF
+approach.
+* `doc2vec_experiment.ipynb` makes use of a Doc2Vec model for document identification. Tagging and model updates were
+not implemented in this notebook.
