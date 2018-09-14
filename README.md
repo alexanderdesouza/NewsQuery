@@ -12,8 +12,10 @@ Clone the repository to your local machine:
 ```
 git clone https://github.com/alexanderdesouza/NewsQuery
 ```
-Setup a virtual environment, activate it, and install the application's requirements:
+Enter the directory and setup a virtual environment there, activate the virtual environment, and install the
+application's requirements:
 ```
+cd newsQuery
 virtualenv newsQuery
 source newsQuery/bin/activate
 pip3 install -r requirements.txt
