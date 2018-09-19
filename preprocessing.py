@@ -31,7 +31,6 @@ def preprocessor(text):
         - removes general special characters (e.g., an '!' or an '&' symbol)
         - splits words that contains dashes or underscores
         - strips the any newline characters
-        
         :param: text: Input string.
         :return: Reformatted version of the input string.
     """
