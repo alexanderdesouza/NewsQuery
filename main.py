@@ -69,7 +69,7 @@ def add_article():
 
 @app.route('/')
 @app.route('/index')
-def main(num_articles=0, article_added="", result=[]):
+def main():
     """
     This is the main webserver route called on application start.
         :return: Renders the main template for the NewsQuery page.

@@ -12,6 +12,8 @@ re_dash_removal = re.compile(r'-|_', re.UNICODE)
 def abbreviations_to_words(text):
     """
     Converts all abbreviations found in the input string to a single word format.
+        :param: text: Input string.
+        :return: Reformatted version of the input string.
     """
     text += " "
     all_abbreviations = [x[0] for x in re_abbr.findall(text + " ")]
@@ -29,6 +31,9 @@ def preprocessor(text):
         - removes general special characters (e.g., an '!' or an '&' symbol)
         - splits words that contains dashes or underscores
         - strips the any newline characters
+        
+        :param: text: Input string.
+        :return: Reformatted version of the input string.
     """
     text = text.lower()
     text = abbreviations_to_words(text)
