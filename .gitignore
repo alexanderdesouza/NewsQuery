@@ -1,7 +1,10 @@
 # Files to ignore
 .DS_Store
 data/glove.*
+data/*.pkl
+data/*.zip
 data/labelled_movie_reviews.tsv
+experiments/*.model
 experiments/transfer_learning_experiment.ipynb
 
 # Dirs to ignore

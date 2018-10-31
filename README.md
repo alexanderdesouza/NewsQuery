@@ -28,7 +28,7 @@ python main.py
 ```
 The site will be hosted locally at http://127.0.0.1:5000/.
 
-_Please note that functionality has only been verified using Chrome (latest as of 13 Sep 2018)._
+_Please note that functionality has only been verified using Chrome (latest as of 07 Oct 2018)._
 
 ## Exploration
 The `exploration` folder contains two Python notebooks in which different models for semantically tagging documents are explored. Included are methods for identifying and comparing similar documents, as well as the possibility of updating
